@@ -13,6 +13,10 @@
 		C35C85DC1CC09AAA006E6EC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35C85DA1CC09AAA006E6EC3 /* Main.storyboard */; };
 		C35C85DE1CC09AAA006E6EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35C85DD1CC09AAA006E6EC3 /* Assets.xcassets */; };
 		C35C85E11CC09AAA006E6EC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35C85DF1CC09AAA006E6EC3 /* LaunchScreen.storyboard */; };
+		C35C85EA1CC09C9B006E6EC3 /* BFECalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C35C85E91CC09C9B006E6EC3 /* BFECalendarView.m */; };
+		C35C85F21CC09EA4006E6EC3 /* BFECalendarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C35C85ED1CC09EA4006E6EC3 /* BFECalendarButton.m */; };
+		C35C85F31CC09EA4006E6EC3 /* BFECalendarInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C35C85EF1CC09EA4006E6EC3 /* BFECalendarInfo.m */; };
+		C35C85F71CC0AC84006E6EC3 /* BFECalendarViewMonths.m in Sources */ = {isa = PBXBuildFile; fileRef = C35C85F61CC0AC84006E6EC3 /* BFECalendarViewMonths.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		C35C85DD1CC09AAA006E6EC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C35C85E01CC09AAA006E6EC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C35C85E21CC09AAA006E6EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C35C85E81CC09C9B006E6EC3 /* BFECalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFECalendarView.h; sourceTree = "<group>"; };
+		C35C85E91CC09C9B006E6EC3 /* BFECalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFECalendarView.m; sourceTree = "<group>"; };
+		C35C85EC1CC09EA4006E6EC3 /* BFECalendarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFECalendarButton.h; sourceTree = "<group>"; };
+		C35C85ED1CC09EA4006E6EC3 /* BFECalendarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFECalendarButton.m; sourceTree = "<group>"; };
+		C35C85EE1CC09EA4006E6EC3 /* BFECalendarInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFECalendarInfo.h; sourceTree = "<group>"; };
+		C35C85EF1CC09EA4006E6EC3 /* BFECalendarInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFECalendarInfo.m; sourceTree = "<group>"; };
+		C35C85F51CC0AC84006E6EC3 /* BFECalendarViewMonths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFECalendarViewMonths.h; sourceTree = "<group>"; };
+		C35C85F61CC0AC84006E6EC3 /* BFECalendarViewMonths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFECalendarViewMonths.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 		C35C85D01CC09AAA006E6EC3 /* CalendarViewMonths */ = {
 			isa = PBXGroup;
 			children = (
+				C35C85EB1CC09CB8006E6EC3 /* 日历 */,
 				C35C85D41CC09AAA006E6EC3 /* AppDelegate.h */,
 				C35C85D51CC09AAA006E6EC3 /* AppDelegate.m */,
 				C35C85D71CC09AAA006E6EC3 /* ViewController.h */,
@@ -77,6 +90,21 @@
 				C35C85D21CC09AAA006E6EC3 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C35C85EB1CC09CB8006E6EC3 /* 日历 */ = {
+			isa = PBXGroup;
+			children = (
+				C35C85EC1CC09EA4006E6EC3 /* BFECalendarButton.h */,
+				C35C85ED1CC09EA4006E6EC3 /* BFECalendarButton.m */,
+				C35C85EE1CC09EA4006E6EC3 /* BFECalendarInfo.h */,
+				C35C85EF1CC09EA4006E6EC3 /* BFECalendarInfo.m */,
+				C35C85E81CC09C9B006E6EC3 /* BFECalendarView.h */,
+				C35C85E91CC09C9B006E6EC3 /* BFECalendarView.m */,
+				C35C85F51CC0AC84006E6EC3 /* BFECalendarViewMonths.h */,
+				C35C85F61CC0AC84006E6EC3 /* BFECalendarViewMonths.m */,
+			);
+			name = "日历";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +180,11 @@
 			files = (
 				C35C85D91CC09AAA006E6EC3 /* ViewController.m in Sources */,
 				C35C85D61CC09AAA006E6EC3 /* AppDelegate.m in Sources */,
+				C35C85EA1CC09C9B006E6EC3 /* BFECalendarView.m in Sources */,
+				C35C85F71CC0AC84006E6EC3 /* BFECalendarViewMonths.m in Sources */,
+				C35C85F21CC09EA4006E6EC3 /* BFECalendarButton.m in Sources */,
 				C35C85D31CC09AAA006E6EC3 /* main.m in Sources */,
+				C35C85F31CC09EA4006E6EC3 /* BFECalendarInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

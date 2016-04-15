@@ -7,9 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "BFECalendarViewMonths.h"
 
 @interface ViewController ()
-
+{
+    BFECalendarViewMonths  *_calendarView;
+}
 @end
 
 @implementation ViewController
@@ -17,6 +20,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+            _calendarView = [[BFECalendarViewMonths alloc] initWithFrame:CGRectMake(0, 300, CGRectGetWidth(self.view.frame), 402)
+                                                                    initWithDate:[NSDate date]
+                                                                monthTitleHeight:44
+                                                                    buttonHeight:46
+                                                                 weekTitleHeight:35
+                                                                   agendaOfMonth:nil];
+    [self.view addSubview:_calendarView];
+    
 }
 
 - (void)didReceiveMemoryWarning {
